@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 30px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Introduction Assignment</h1>
+    <p>Welcome to my JavaScript webpage!</p>
+
+    <h3>Change Document Colors</h3>
+
+    <label>
+        <input type="checkbox" id="backgroundColor">
+        Change Background Color
+    </label>
+
+    <label>
+        <input type="checkbox" id="textColor">
+        Change Text Color
+    </label>
+
+    <script>
+        // Question 2: Welcome message
+        console.log("Welcome to the Page");
+
+        // Question 3: Prompt for user's name
+        const userName = prompt("What is your name?");
+        console.log("User's Name:", userName);
+
+        // Question 4: Full name
+        const fullName = "Felix Ikeh";
+        console.log("Full Name:", fullName);
+
+        // Question 5: Age
+        const age = 22;
+        console.log("Age:", age);
+
+        // Question 6: Mom object
+        const mom = {
+            age: 45,
+            isHappy: true,
+            name: "Mom"
+        };
+
+        console.log("Mom's Age:", mom.age);
+        console.log("Mom is Happy:", mom.isHappy);
+        console.log("Mom's Name:", mom.name);
+
+        // Question 7: Change background color
+        document.getElementById("backgroundColor")
+            .addEventListener("change", function() {
+                if (this.checked) {
+                    document.body.style.backgroundColor = "lightblue";
+                } else {
+                    document.body.style.backgroundColor = "white";
+                }
+            });
+
+        // Question 7: Change text color
+        document.getElementById("textColor")
+            .addEventListener("change", function() {
+                if (this.checked) {
+                    document.body.style.color = "darkblue";
+                } else {
+                    document.body.style.color = "black";
+                }
+            });
+    </script>
+</body>
+</html>
